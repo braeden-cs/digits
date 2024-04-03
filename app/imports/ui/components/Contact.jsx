@@ -15,7 +15,6 @@ const Contact = ({ contact, notes }) => (
     </Card.Header>
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
-      <Link to={`/edit/${contact._id}`}>Edit</Link>
     </Card.Body>
     <ListGroup variant="flush">
       {notes.map((note) => <Note key={note._id} note={note} />)}
